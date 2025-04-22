@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Anon";
+    src: url("/fonts/AnonymousPro-Regular.ttf");
+}
+
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative
+}
+
+body::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/media/color-blur.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link img {
+    height: 2rem;
+}
+
+#nav-tabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-tab {
+    font-family: "Anon";
+    font-size: 1rem;
+}
