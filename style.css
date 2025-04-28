@@ -3,6 +3,11 @@
     src: url("/fonts/AnonymousPro-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Bookmania";
+    src: url("/fonts/Fontspring-DEMO-bookmania-regular.otf");
+}
+
 body, html {
     height: 100vh;
     margin: 0;
@@ -10,7 +15,6 @@ body, html {
     box-sizing: border-box;
     position: relative;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body::before {
@@ -69,7 +73,43 @@ li {
     gap: 1rem;
 }
 
+#about {
+    display: flex;
+    height: calc(100vh - 20vh);
+}
+
+#about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
 #profile img {
-    height: 500px;
+    height: 400px;
     width: auto;
+}
+
+/*
+#profile {
+    margin-left: 20%;
+}
+*/
+
+#about-right {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-content h2 {
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+#about-content h2, p {
+    font-family: "Anon";
+    margin-left: 10%;
+    margin-right: 10%;
 }
