@@ -115,9 +115,10 @@ li {
 }
 
 #about-content h3 {
-    color: #FF6201;
+    color: rgb(125, 100, 57)
 }
 
 #about-content a {
     text-decoration: underline;
 }
+
