@@ -4,8 +4,13 @@
 }
 
 @font-face {
-    font-family: "Bookmania";
-    src: url("/fonts/Fontspring-DEMO-bookmania-regular.otf");
+    font-family: "Newsreader";
+    src: url("/fonts/Newsreader-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Office";
+    src: url("/fonts/OfficeCodePro-Light.otf");
 }
 
 body, html {
@@ -117,10 +122,55 @@ li {
 }
 
 #about-content h3 {
-    color: rgb(125, 100, 57)
+    color: #4392F1;
 }
 
 #about-content a {
     text-decoration: underline;
+}
+
+#project-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+#project-content h1 {
+    font-family: "Newsreader";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    border-radius: 10px;
+}
+
+.project-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-type p {
+    background-color: white;
+    color: #4392F1;
+    border-radius: 10px;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.project-label {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center; 
 }
 
