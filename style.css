@@ -90,6 +90,7 @@ li {
     justify-content: center;
     align-items: center;
     width: 50vw;
+    margin-left: 10%;
 }
 
 #profile img {
@@ -108,6 +109,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10%;
 }
 
 #about-content h2 {
@@ -130,13 +132,11 @@ li {
 }
 
 #project-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    margin-top: 10vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 3vw;
+    box-sizing: border-box;
 }
 
 #project-content h1 {
@@ -150,20 +150,24 @@ li {
 .project-container {
     display: flex;
     flex-direction: column;
-    width: 18%;
     border-radius: 10px;
     padding: 1rem;
     border: 1px solid transparent;
+    height: 100%;
+    transition: transform 0.2s ease;
 }
 
 .project-container:hover {
     backdrop-filter: blur(50px);
     border: 1px solid black;
+    transform: scale(1.01);
 }
 
 .project-media img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
     border-radius: 10px;
 }
 
