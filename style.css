@@ -17,6 +17,7 @@ body, html {
     overflow-x: hidden;
 }
 
+
 body::before {
     position: fixed;
     content: "";
@@ -24,7 +25,7 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("/media/denim.jpg");
+    background-image: url("/media/blue-blur.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -32,6 +33,7 @@ body::before {
     opacity: 0.5;
     z-index: -1;
 }
+
 
 nav {
     display: flex;
