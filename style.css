@@ -135,6 +135,8 @@ li {
     align-items: center;
     width: 100vw;
     margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #project-content h1 {
@@ -148,14 +150,27 @@ li {
 .project-container {
     display: flex;
     flex-direction: column;
-    width: 16%;
+    width: 18%;
     border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid transparent;
+}
+
+.project-container:hover {
+    backdrop-filter: blur(50px);
+    border: 1px solid black;
 }
 
 .project-media img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.project-label {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center; 
 }
 
 .project-type p {
@@ -168,9 +183,11 @@ li {
     white-space: nowrap;
 }
 
-.project-label {
-    display: flex; 
-    justify-content: flex-start;
-    align-items: center; 
+.project-description p {
+    display: inline-block;
+    margin: 0 0 1rem 0.5rem;
+    padding: 0;
+    font-size: 0.8rem;
 }
+
 
