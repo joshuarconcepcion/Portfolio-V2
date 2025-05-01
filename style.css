@@ -158,7 +158,7 @@ li {
 }
 
 .project-container:hover {
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
     border: 1px solid black;
     transform: scale(1.01);
 }
