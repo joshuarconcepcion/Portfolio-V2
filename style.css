@@ -47,7 +47,25 @@ nav {
     height: 10vh;
 }
 
+#nav-tabs {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
 #nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+#nav-secret {
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +106,19 @@ li {
 #nav-links {
     display: flex;
     gap: 1rem;
+}
+
+main {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp .6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #about {
@@ -204,4 +235,11 @@ li {
     font-size: 0.8rem;
 }
 
+#workshop {
+    display: flex;
+    height: calc(100vh - 20vh);
+    justify-content: center;
+    font-family: "Anon";
+    align-items: center;
+}
 
