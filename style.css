@@ -88,10 +88,6 @@ li {
     height: 1.75rem;
 }
 
-#nav-secret img {
-    height: 5rem;
-}
-
 #nav-tabs {
     display: flex;
     gap: 5rem;
