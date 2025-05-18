@@ -13,6 +13,11 @@
     src: url("/fonts/OfficeCodePro-Light.otf");
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Medium.ttf");
+}
+
 :root {
     --project-blue: #4392F1;
 }
@@ -187,10 +192,10 @@ main {
 }
 
 #project-content h1 {
-    font-family: "Newsreader";
+    font-family: "Poppins";
     font-style: italic;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-left: 0.5rem;
 }
 
